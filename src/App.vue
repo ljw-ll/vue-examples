@@ -1,30 +1,32 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+  <div id="app">
+    <sidebar id="sidebar" />
+    <router-view id="router" />
   </div>
-  <router-view />
 </template>
 
+<script>
+import sidebar from "@/views/Sidebar";
+export default {
+  components: { sidebar }
+};
+</script>
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  margin-top: 20px;
 }
-
-#nav {
-  padding: 30px;
+#sidebar {
+  width: 300px;
+  display: inline-block;
+  border: 1px solid red;
+  vertical-align: top;
 }
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
+#router {
+  width: 500px;
+  display: inline-block;
+  border: 1px solid red;
 }
 </style>

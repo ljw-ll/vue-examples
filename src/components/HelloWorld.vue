@@ -64,7 +64,7 @@
       <li>
         <a href="https://chat.vuejs.org" target="_blank" rel="noopener"
           >Community Chat</a
-        >
+        >a
       </li>
       <li>
         <a href="https://twitter.com/vuejs" target="_blank" rel="noopener"
@@ -116,11 +116,11 @@ import { defineComponent } from "vue";
 export default defineComponent({
   name: "HelloWorld",
   props: {
-    msg: String,
+    msg: String
   },
   setup() {
     const a = 12;
-  },
+  }
 });
 </script>
 
