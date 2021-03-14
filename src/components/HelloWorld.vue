@@ -116,11 +116,11 @@ import { defineComponent } from "vue";
 export default defineComponent({
   name: "HelloWorld",
   props: {
-    msg: String
+    msg: String,
   },
-  setup(){
-    const a=12;
-  }
+  setup() {
+    const a = 12;
+  },
 });
 </script>
 
