@@ -14,6 +14,35 @@ const routes: Array<RouteRecordRaw> = [
     path: "/example02",
     //name: "Home",
     component: () => import("@/views/example02/Example02.vue")
+  },
+  /*example3----------------------------------------*/
+  {
+    props: true,
+    path: "/example03/students/:sid/homeworks/:hid",
+    component: () => import("@/views/example03/Example03.vue")
+  },
+  {
+    path: "/example03/Example03_login",
+    component: () => import("@/views/example03/Example03_login.vue")
+  },
+  /*example4--------------------------------------------*/
+  {
+    path: "/example04/Example04-01",
+    component: () => import("@/views/example04/Example04-01.vue")
+  },
+  {
+    path: "/example04/Example04-02",
+    component: () => import("@/views/example04/Example04-02.vue")
+  },
+  {
+    props: true,
+    path: "/example04/Example04-03/students/:sid/homeworks/:hid",
+    component: () => import("@/views/example04/Example04-03.vue")
+  },
+  {
+    props: true,
+    path: "/example04/Example04-04",
+    component: () => import("@/views/example04/Example04-04.vue")
   }
 ];
 

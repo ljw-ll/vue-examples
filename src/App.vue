@@ -1,32 +1,33 @@
 <template>
   <div id="app">
     <sidebar id="sidebar" />
-    <router-view id="router" />
+    <router-view id="router" v-bind:key="$route.path" />
   </div>
 </template>
 
 <script>
 import sidebar from "@/views/Sidebar";
 export default {
-  components: { sidebar }
+  components: {
+    sidebar
+    //sidebar: () => import("@/views/Sidebar")
+  }
 };
 </script>
 <style>
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  margin-top: 20px;
+#app {
+  margin-top: 10px;
+  display: flex;
 }
+
 #sidebar {
-  width: 300px;
-  display: inline-block;
+  width: 500px;
   border: 1px solid red;
-  vertical-align: top;
+  padding: 15px;
 }
 #router {
-  width: 500px;
-  display: inline-block;
   border: 1px solid red;
+  flex: 1;
+  padding: 15px;
 }
 </style>
