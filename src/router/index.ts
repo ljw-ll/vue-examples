@@ -43,6 +43,60 @@ const routes: Array<RouteRecordRaw> = [
     props: true,
     path: "/example04/Example04-04",
     component: () => import("@/views/example04/Example04-04.vue")
+  },
+  /*example5------------------------------------------------*/
+
+  {
+    props: true,
+    path: "/example05/Example05-01",
+    component: () => import("@/views/example05/Example05-01.vue")
+  },
+  {
+    props: true,
+    path: "/example05/Example05-02",
+    component: () => import("@/views/example05/Example05-02.vue")
+  },
+  {
+    props: true,
+    path: "/example05/Example05-03",
+    component: () => import("@/views/example05/Example05-03.vue")
+  },
+  {
+    props: true,
+    path: "/example05/Example05-04",
+    component: () => import("@/views/example05/Example05-04.vue")
+  },
+  /*example06----------------------------------------------- */
+  {
+    props: true,
+    path: "/example06/Example06-01",
+    component: () => import("@/views/example06/Example06-01.vue")
+  },
+  {
+    props: true,
+    path: "/example06/Example06-02",
+    component: () => import("@/views/example06/Example06-02.vue")
+  },
+  /*example07----------------------------------------------- */
+  {
+    props: true,
+    path: "/example07/Example07-01",
+    component: () => import("@/views/example07/Example07-01.vue")
+  },
+  {
+    props: true,
+    path: "/example07/Example07-02",
+    component: () => import("@/views/example07/Example07-02.vue")
+  },
+  {
+    props: true,
+    path: "/example07/Example07-03",
+    component: () => import("@/views/example07/Example07-03.vue")
+  },
+  {
+    props: true,
+    path: "/example07/Example07-04",
+    component: () => import("@/views/example07/Example07-04.vue")
   }
 ];
 

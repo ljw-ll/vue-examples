@@ -29,12 +29,12 @@ export default defineComponent({
   created() {
     this.init();
   },
-  beforeUpdate() {
-    this.init();
-  },
-  beforeRouteUpdate() {
-    console.log("beforeRouterUpdate");
-  },
+  // beforeUpdate() {
+  //   this.init();
+  // },
+  // beforeRouteUpdate() {
+  //   console.log("beforeRouterUpdate");
+  // },
   methods: {
     init() {
       console.log(this.$route.params.sid);
